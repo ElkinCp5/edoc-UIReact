@@ -5,12 +5,11 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
 /* Import Custom Components */
-import { dashboard as Dashboard } from "../layouts";
+import { layoutDashboard as Dashboard } from "../layouts";
 
 
 
 class Login extends Component {
-
   render() {
     return (
       <Dashboard className="login-page">

@@ -1,0 +1,9 @@
+@import "./_global.css";
+@import "./_colors.css";
+@import "./_fonts.css";
+@import "./_media.css";
+
+
+.dashboard{
+    min-height: 100vh !important;
+}

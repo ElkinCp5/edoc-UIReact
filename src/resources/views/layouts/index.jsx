@@ -1,6 +1,7 @@
-import dashboard from "./dashboard/dashboard";
-import standar from "./standar/standar";
-/* PAGE ERROR SYSTEM */
-import E404 from "./error/error404";
+import layoutDashboard from "./dashboard/layoutDashboard";
+import layoutStandar from "./standar/layoutStandar";
 
-export { dashboard, standar, E404 };
+/* PAGE ERROR SYSTEM */
+import layoutError from "./error/layoutError";
+
+export { layoutDashboard, layoutStandar, layoutError };

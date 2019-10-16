@@ -1,0 +1,31 @@
+:root{
+    --color-white: rgb(255, 255, 255);
+
+    --color-gray-1: rgb(230, 231, 232);
+    --color-gray-1: rgb(204, 204, 204);
+    --color-gray-1: rgb(179, 179, 179);
+    --color-gray-1: rgb(153, 153, 153);
+
+    --color-dark-1: rgb(90, 90, 90);
+    --color-dark-2: rgb(56, 56, 56);
+    --color-dark-3: rgb(45, 45, 45);
+    --color-dark-4: rgb(0, 0, 0);
+
+    --color-yellow: rgb(252, 200, 31);
+    --color-fuschia: rgb(242, 14, 136);
+    --color-blue: rgb(80, 38, 230);
+}
+
+.yellow-bg{
+
+}
+.gradien{
+    background: var(--color-yellow);
+    background: -moz-linear-gradient(-45deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, var(--color-yellow)), color-stop(43%, var(--color-fuschia)), color-stop(100%, var(--color-blue)));
+    background: -webkit-linear-gradient(-45deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
+    background: -o-linear-gradient(-45deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
+    background: -ms-linear-gradient(-45deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
+    background: linear-gradient(135deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc81f', endColorstr='#5026e6', GradientType=1 );
+}

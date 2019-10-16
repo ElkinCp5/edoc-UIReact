@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
 /* Import Custom Components */
-import { standar as Standar } from "../layouts";
+import { layoutStandar as Standar } from "../layouts";
 
 
 

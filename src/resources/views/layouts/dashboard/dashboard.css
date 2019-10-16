@@ -1,0 +1,140 @@
+/* Logo*/
+.ant-layout-sider .logo{
+    width: 100%;
+    height: 80px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.ant-layout-sider .logo img{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+
+.ant-layout-sider .logo img:nth-last-child(1){
+    top: -200px;
+    z-index: 1;
+}
+
+.ant-layout-sider.ant-layout-sider-collapsed .logo img:nth-last-child(1){
+    top: -3px;
+    z-index: 1;
+}
+
+.ant-layout-sider .logo img:nth-last-child(2){
+    width: 80% !important;
+    margin: auto 5%;
+}
+
+.ant-layout-sider.ant-layout-sider-collapsed .logo img:nth-last-child(2){
+    bottom: -20px;
+    z-index: 1;
+}
+
+/* Header*/
+.header.ant-layout-header{
+    height: 80px;
+    padding: 10px 0 !important;
+}
+
+.ant-layout-sider 
+.ant-menu.ant-menu-vertical,
+
+.header.ant-layout-header 
+.ant-menu.ant-menu-horizontal{
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-white);
+}
+.header.ant-layout-header{
+    padding: 0;
+    background-color: var(--color-gray-1);
+}
+.ant-menu{
+    background-color: transparent !important;
+}
+.header.ant-layout-header .ant-menu-horizontal
+.ant-menu-item,
+.header.ant-layout-header .ant-menu-horizontal
+.ant-menu-item.ant-menu-item-selected,
+.header.ant-layout-header .ant-menu-horizontal
+.ant-menu-item.ant-menu-item-active,
+
+.ant-layout-sider-children .ant-menu-inline
+.ant-menu-item::after,
+.ant-layout-sider-children .ant-menu-inline
+.ant-menu-item.ant-menu-item-selected,
+.ant-layout-sider-children .ant-menu-inline
+.ant-menu-item.ant-menu-item-active{
+    border: 0;
+
+}
+
+.ant-menu-inline .ant-menu-item{
+    margin-top: 0px;
+}
+
+.header.ant-layout-header 
+.menu-buttom,
+.header.ant-layout-header 
+.menu-avartar{
+    padding: 0 10px;
+}
+
+.header.ant-layout-header 
+.menu-buttom{
+    float: left;
+}
+
+.header.ant-layout-header 
+.menu-avartar{
+    float: right;
+}
+
+
+.menu-buttom button,
+.menu-buttom .ant-badge,
+.menu-avartar button,
+.menu-avartar .ant-badge{
+    margin: 0 5px;
+}
+
+.menu-avartar
+.ant-badge .ant-avatar{
+    margin-top: -5px !important;
+    color: var(--color-dark-4);
+}
+.header.ant-layout-header 
+button.ant-btn-link.ant-btn-circle{
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    color: var(--color-dark-4);
+    background-color: transparent;
+
+}
+.header.ant-layout-header 
+button.ant-btn-primary.ant-btn-circle{
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    color: var(--color-dark-4);
+    border: 2px solid var(--color-dark-4);
+    background-color: transparent;
+}
+/* Sider */
+.ant-layout-sider{
+    background-color: transparent;
+}
+.ant-layout-sider.ant-layout-sider-collapsed{
+    flex: 0 0 87px !important;
+    max-width: 87px !important;
+    min-width: 87px !important;
+    width: 87px !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: var(--color-fuschia) !important;
+}
