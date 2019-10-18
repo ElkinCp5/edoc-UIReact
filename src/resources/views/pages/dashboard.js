@@ -6,14 +6,17 @@ import { bindActionCreators } from "redux";
 
 /* Import Custom Components */
 import { layoutDashboard as Dashboard } from "../layouts";
-
+import { HtitleHeader as Title } from "../../../components/header";
 
 
 class Login extends Component {
   render() {
     return (
-      <Dashboard className="login-page">
-          <h1>Hola Soy El Dashboard</h1>
+      <Dashboard className="container">
+        <Title toBack={false} title="Title" subTitle="This is a subtitle" />
+        <div className="container-page">
+          <h1>Hola soy el Dashboard!!</h1>
+        </div>
       </Dashboard>
     );
   }

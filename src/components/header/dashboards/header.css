@@ -1,0 +1,31 @@
+:root{
+    --color-hoverBuTo: var(--color-blue-2);
+
+}
+.header.ant-layout-header{
+    background-color: var(--color-blue-4);
+}
+
+.ant-tooltip-inner,
+.ant-tooltip-arrow::before {
+    background-color: var(--color-hoverBuTo) !important;
+}
+.ant-tooltip-arrow::before {
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-active {
+    background-color: var(--color-hoverBuTo) !important;
+    color: var(--color-blue) !important;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item {
+    color: var(--color-white) !important;
+}
+
+.menu-buttom button:hover,
+.menu-avartar button:hover{
+    background-color: var(--color-hoverBuTo) !important;
+}
+

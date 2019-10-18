@@ -24,13 +24,8 @@
 }
 
 .ant-layout-sider .logo img:nth-last-child(2){
-    width: 80% !important;
-    margin: auto 5%;
-}
-
-.ant-layout-sider.ant-layout-sider-collapsed .logo img:nth-last-child(2){
-    bottom: -20px;
-    z-index: 1;
+    width: 160px !important;
+    margin: 5px calc(20px);
 }
 
 /* Header*/
@@ -39,6 +34,23 @@
     padding: 10px 0 !important;
 }
 
+.dashboard .page-header,
+.dashboard .container-page{
+    display: block;
+    padding: 24px 30px;
+    box-sizing: border-box;
+}
+
+.dashboard .page-header h1{
+    font-size: 1.8em;
+    margin-bottom: 0em;
+}
+
+.dashboard .header-heading{
+    background-color: var(--color-gray);
+    border-left: 2px solid var(--color-fuschia-2);
+    padding: 5px 10px;
+}
 .ant-layout-sider 
 .ant-menu.ant-menu-vertical,
 
@@ -50,11 +62,11 @@
 }
 .header.ant-layout-header{
     padding: 0;
-    background-color: var(--color-gray-1);
 }
 .ant-menu{
     background-color: transparent !important;
 }
+
 .header.ant-layout-header .ant-menu-horizontal
 .ant-menu-item,
 .header.ant-layout-header .ant-menu-horizontal
@@ -62,18 +74,22 @@
 .header.ant-layout-header .ant-menu-horizontal
 .ant-menu-item.ant-menu-item-active,
 
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item,
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left,
 .ant-layout-sider-children .ant-menu-inline
 .ant-menu-item::after,
 .ant-layout-sider-children .ant-menu-inline
 .ant-menu-item.ant-menu-item-selected,
 .ant-layout-sider-children .ant-menu-inline
 .ant-menu-item.ant-menu-item-active{
-    border: 0;
-
+    border: 0 !important;
+    margin: 0 !important;
 }
 
-.ant-menu-inline .ant-menu-item{
-    margin-top: 0px;
+.ant-menu-inline > .ant-menu-item,
+.ant-menu-vertical > .ant-menu-item{
+    height: 50px !important;
+    line-height: 50px !important;
 }
 
 .header.ant-layout-header 
@@ -93,7 +109,6 @@
     float: right;
 }
 
-
 .menu-buttom button,
 .menu-buttom .ant-badge,
 .menu-avartar button,
@@ -111,7 +126,7 @@ button.ant-btn-link.ant-btn-circle{
     width: 42px;
     height: 42px;
     font-size: 20px;
-    color: var(--color-dark-4);
+    color: var(--color-white);
     background-color: transparent;
 
 }
@@ -120,13 +135,29 @@ button.ant-btn-primary.ant-btn-circle{
     width: 42px;
     height: 42px;
     font-size: 20px;
-    color: var(--color-dark-4);
-    border: 2px solid var(--color-dark-4);
+    color: var(--color-white);
+    border: 0px solid var(--color-white);
     background-color: transparent;
 }
 /* Sider */
-.ant-layout-sider{
-    background-color: transparent;
+.dashboard .ant-layout-sider,
+.dashboard .ant-layout-sider.ant-layout-sider-collapsed{
+    position: relative ;
+}
+
+.ant-layout-sider,
+.ant-layout-sider .ant-layout-sider-children{
+    background-color: var(--color-blue-4);
+}
+
+.ant-layout-sider-children{
+    max-width: 200px;
+}
+.ant-layout-sider .close-sider{
+    display: none;
+}
+.ant-layout-sider div{
+    display: block ;
 }
 .ant-layout-sider.ant-layout-sider-collapsed{
     flex: 0 0 87px !important;
@@ -135,6 +166,35 @@ button.ant-btn-primary.ant-btn-circle{
     width: 87px !important;
 }
 
-.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-    background-color: var(--color-fuschia) !important;
+
+
+
+@keyframes rotate-icon-on {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.menu-buttom button.side-collapsed-on{
+    animation-name: rotate-icon-on;
+    animation-duration: .8s;
+    transform: rotate(180deg);
+}
+
+@keyframes rotate-icon {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.menu-buttom button.side-collapsed-off{
+    animation-name: rotate-icon;
+    animation-duration: .8s;
+    transform: rotate(0deg);
 }

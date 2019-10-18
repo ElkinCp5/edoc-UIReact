@@ -1,0 +1,63 @@
+/* Media display hidden*/
+@media only screen and (max-width: 576px) {
+    .hidden-xs{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hidden-md{
+        display: none !important;
+    }
+    .dashboard .ant-layout-sider{
+        top: 0;
+        left: 0;
+        position: absolute !important;
+        background-color: rgba(0, 0, 0, 0.8);
+        min-height: 100vh;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        width: 100% !important;
+        z-index: 800;
+    }
+    .dashboard .ant-layout-sider.ant-layout-sider-collapsed{
+        top: 0;
+        left: -250px;
+        max-width: 200px !important;
+        min-width: 200px !important;
+        width: 200px !important;
+    }
+    .ant-layout-sider
+    .close-sider{
+        top: 0px;
+        right: 0px;
+        height: 100vh;
+        display: block;
+        width: calc(100% - 200px);
+        position: absolute !important;
+        font-size: 24px;
+        z-index: 900;
+    }
+    .ant-layout-sider
+    .close-sider i{
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        color: var(--color-white);
+    }
+    .ant-layout-sider .ant-layout-sider-children{
+        min-height: 100vh !important;
+        max-width: 200px !important;
+        min-width: 200px !important;
+        width: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hidden-lg{
+        display: none !important;
+    }
+}
+
+
+/*Media */

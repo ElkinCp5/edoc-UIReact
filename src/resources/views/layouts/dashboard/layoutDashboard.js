@@ -6,21 +6,23 @@ import {
   withRouter
 } from "react-router-dom";
 import { Helper } from '../../../../utils';
-import { Layout, Menu, Icon, Breadcrumb, PageHeader } from "antd";
-import { Hdashboards as Header } from "../../../../components/header";
+import { Layout, Menu, Icon, Breadcrumb } from "antd";
+import { Hdashboards as Header} from "../../../../components/header";
+import { Sdashboards as Sider } from "../../../../components/sider";
+
 import { ECcolor, EDcolor } from "../../../images";
 import "./dashboard.css";
 /* Import Custom Components */
 
 let { RouteWithSubRoutes } = Helper;
 const { SubMenu } = Menu;
-let { Content, Sider} = Layout;
+let { Content} = Layout;
 
 
 
 class dashboardLayout extends React.Component {
   state = {
-    collapsed: false,
+    collapsed: false
   };
 
   toggle = () => {
@@ -35,6 +37,7 @@ class dashboardLayout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      collapsed: false,
       isToggleOn: false,
       isMobile: false
     };
@@ -49,33 +52,12 @@ class dashboardLayout extends React.Component {
     return (
       <Router>
         <Layout className="dashboard">
-          <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
-            <div className="logo">
-              <img src={EDcolor} className={"animation"}/>
-              <img src={ECcolor} className={"animation"}/>
-            </div>
-            <Menu  mode="inline" defaultSelectedKeys={['1']}>
-              <Menu.Item key="1">
-                <Icon type="user" />
-                <span>nav 1</span>
-              </Menu.Item>
-              <Menu.Item key="2">
-                <Icon type="video-camera" />
-                <span>nav 2</span>
-              </Menu.Item>
-              <Menu.Item key="3">
-                <Icon type="upload" />
-                <span>nav 3</span>
-              </Menu.Item>
-            </Menu>
-          </Sider>
+          <Sider logoName={EDcolor} logoE={ECcolor} onCollapsed={this.toggle} collapsed={this.state.collapsed}/>
           <Layout>
-            <Header  collapsed={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} onCollapsed={this.toggle} />
-            <PageHeader onBack={() => null} title="Title" subTitle="This is a subtitle" />
+            <Header  collapsed={this.state.collapsed} onCollapsed={this.toggle} />
+
             <Content
               style={{
-                margin: '24px 16px',
-                padding: 24,
                 background: 'transparent',
                 minHeight: 280,
               }}

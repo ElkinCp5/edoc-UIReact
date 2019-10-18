@@ -1,31 +1,151 @@
 :root{
     --color-white: rgb(255, 255, 255);
 
-    --color-gray-1: rgb(230, 231, 232);
+    --color-gray: rgb(230, 231, 232);
     --color-gray-1: rgb(204, 204, 204);
-    --color-gray-1: rgb(179, 179, 179);
-    --color-gray-1: rgb(153, 153, 153);
+    --color-gray-2: rgb(179, 179, 179);
+    --color-gray-3: rgb(153, 153, 153);
 
     --color-dark-1: rgb(90, 90, 90);
     --color-dark-2: rgb(56, 56, 56);
     --color-dark-3: rgb(45, 45, 45);
     --color-dark-4: rgb(0, 0, 0);
 
-    --color-yellow: rgb(252, 200, 31);
-    --color-fuschia: rgb(242, 14, 136);
-    --color-blue: rgb(80, 38, 230);
+    --color-yellow: rgb(255, 221, 108);
+    --color-yellow-1: rgb(252, 200, 31);
+    --color-yellow-2: rgb(226, 179, 24);
+    --color-yellow-3: rgb(172, 135, 16);
+
+    --color-fuschia: rgb(240, 81, 165);
+    --color-fuschia-1: rgb(242, 14, 136);
+    --color-fuschia-2: rgb(207, 12, 116);
+    --color-fuschia-3: rgb(148, 10, 84);
+
+    --color-blue: rgb(109, 76, 231);
+    --color-blue-1: rgb(80, 38, 230);
+    --color-blue-2: rgb(66, 31, 190);
+    --color-blue-3: rgb(52, 25, 150);
+    --color-blue-4: rgb(17, 4, 65);
 }
 
+/* YELLOW BACKGROUND */
 .yellow-bg{
-
+    background-color: var(--color-yellow);
 }
-.gradien{
-    background: var(--color-yellow);
-    background: -moz-linear-gradient(-45deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, var(--color-yellow)), color-stop(43%, var(--color-fuschia)), color-stop(100%, var(--color-blue)));
-    background: -webkit-linear-gradient(-45deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
-    background: -o-linear-gradient(-45deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
-    background: -ms-linear-gradient(-45deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
-    background: linear-gradient(135deg, var(--color-yellow) 0%, var(--color-fuschia) 43%, var(--color-blue) 100%);
+.yellow-bg-1{
+    background-color: var(--color-yellow-1);
+}
+.yellow-bg-2{
+    background-color: var(--color-yellow-2);
+}
+.yellow-bg-3{
+    background-color: var(--color-yellow-3);
+}
+
+/* YELLOW TEXT */
+.yellow-text{
+    color: var(--color-yellow);
+}
+.yellow-text-1{
+    color: var(--color-yellow-1);
+}
+.yellow-text-2{
+    color: var(--color-yellow-2);
+}
+.yellow-text-3{
+    color: var(--color-yellow-3);
+}
+
+/* FUSCHIA BACKGROUND */
+.fuschia-bg{
+    background-color: var(--color-fuschia);
+}
+.fuschia-bg-1{
+    background-color: var(--color-fuschia-1);
+}
+.fuschia-bg-2{
+    background-color: var(--color-fuschia-2);
+}
+.fuschia-bg-3{
+    background-color: var(--color-fuschia-3);
+}
+
+/* FUSCHIA TEXT */
+.fuschia-text{
+    color: var(--color-fuschia);
+}
+.fuschia-text-1{
+    color: var(--color-fuschia-1);
+}
+.fuschia-text-2{
+    color: var(--color-fuschia-2);
+}
+.fuschia-text-3{
+    color: var(--color-fuschia-3);
+}
+
+/* BLUE BACKGROUND */
+.blue-bg{
+    background-color: var(--color-blue);
+}
+.blue-bg-1{
+    background-color: var(--color-blue-1);
+}
+.blue-bg-2{
+    background-color: var(--color-blue-2);
+}
+.blue-bg-3{
+    background-color: var(--color-blue-3);
+}
+.blue-bg-4{
+    background-color: var(--color-blue-4);
+}
+/* BLUE TEXT */
+.blue-text{
+    color: var(--color-blue);
+}
+.blue-text-1{
+    color: var(--color-blue-1);
+}
+.blue-text-2{
+    color: var(--color-blue-2);
+}
+.blue-text-3{
+    color: var(--color-blue-3);
+}
+.blue-text-3{
+    color: var(--color-blue-4);
+}
+
+.gradien-YFB{
+    background: var(--color-yellow-1);
+    background: -moz-linear-gradient(-45deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 43%, var(--color-blue-1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, var(--color-yellow-1)), color-stop(43%, var(--color-fuschia-1)), color-stop(100%, var(--color-blue-1)));
+    background: -webkit-linear-gradient(-45deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 43%, var(--color-blue-1) 100%);
+    background: -o-linear-gradient(-45deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 43%, var(--color-blue-1) 100%);
+    background: -ms-linear-gradient(-45deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 43%, var(--color-blue-1) 100%);
+    background: linear-gradient(135deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 43%, var(--color-blue-1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc81f', endColorstr='#5026e6', GradientType=1 );
+}
+
+.gradien-YF{
+    background: var(--color-yellow-1);
+    background: -moz-linear-gradient(-45deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, var(--color-yellow-1)),color-stop(100%, var(--color-fuschia-1)));
+    background: -webkit-linear-gradient(-45deg, var(--color-yellow-1) 0%,  var(--color-fuschia-1) 100%);
+    background: -o-linear-gradient(-45deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 100%);
+    background: -ms-linear-gradient(-45deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 100%);
+    background: linear-gradient(135deg, var(--color-yellow-1) 0%,var(--color-fuschia-1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc81f', endColorstr='#5026e6', GradientType=1 );
+}
+
+.gradien-FB{
+    background: var(--color-yellow-1);
+    background: -moz-linear-gradient(-45deg, var(--color-fuschia-1) 0%, var(--color-blue-1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, var(--color-fuschia-1)), color-stop(100%, var(--color-blue-1)));
+    background: -webkit-linear-gradient(-45deg, var(--color-fuschia-1) 0%,  var(--color-blue-1) 100%);
+    background: -o-linear-gradient(-45deg, var(--color-fuschia-1) 0%, var(--color-blue-1) 100%);
+    background: -ms-linear-gradient(-45deg, var(--color-fuschia-1) 0%, var(--color-blue-1) 100%);
+    background: linear-gradient(135deg, var(--color-fuschia-1) 0%, var(--color-blue-1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc81f', endColorstr='#5026e6', GradientType=1 );
 }
