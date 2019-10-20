@@ -7,27 +7,19 @@
 .dashboard{
     min-height: 100vh !important;
 }
-
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50% !important;
+}
 .ant-dropdown,
 .ant-dropdown-menu{
-    padding: 0 !important;
-    background-color: var(--color-fuschia-3) !important; 
+    padding: 0 !important; 
 }
 
 .ant-dropdown .ant-dropdown-menu-item{
     padding: 10px 12px !important;
 }
 
-.ant-dropdown .ant-dropdown-menu-item,
-.ant-dropdown .ant-dropdown-menu-item > a,
-.ant-dropdown .ant-dropdown-menu-submenu-title > a{
-    color: var(--color-white) !important;
-}
-
-.ant-dropdown .ant-dropdown-menu-item-active,
-.ant-dropdown .ant-dropdown-menu-item-active > a,
-.ant-dropdown .ant-dropdown-menu-submenu-title > a{
-    background-color: var(--color-fuschia-2) !important; 
-}
 
 

@@ -45,7 +45,6 @@ class dashboardLayout extends React.Component {
     /*this.bodyScroll(this.toggleCollapsed);*/
   }
 
-
   render() {
     let { className, location, routes, children } = this.props;
 

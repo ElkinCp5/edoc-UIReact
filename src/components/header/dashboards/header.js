@@ -5,6 +5,7 @@ import "./header.css"
 const { Header } = Layout;
 const menuUser = (
     <Menu>
+        <div className="ant-tooltip-arrow"></div>
       <Menu.Item key="0">
         <a href>1st menu item</a>
       </Menu.Item>
@@ -70,7 +71,7 @@ let Hdash = (props) => {
                     />
                 </Tooltip>
                 <Badge count={1}>
-                    <Dropdown overlay={menuUser} trigger={['click']}>
+                    <Dropdown className="Dropdown-header" overlay={menuUser} trigger={['click']}>
                         <Avatar size={36} icon="user" />
                     </Dropdown>
                 </Badge>

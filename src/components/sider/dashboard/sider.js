@@ -1,5 +1,6 @@
 import React from "react";
 import { Layout, Menu, Button, Icon} from "antd";
+import "./sider.css";
 
 let { Sider } = Layout;
 

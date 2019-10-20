@@ -1,5 +1,6 @@
 :root{
     --color-hoverBuTo: var(--color-blue-2);
+    --color-hoverDropDpwnTo: var(--color-blue-3);
 
 }
 .header.ant-layout-header{
@@ -23,9 +24,96 @@
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item {
     color: var(--color-white) !important;
 }
+/* Button header menu*/
+.header.ant-layout-header 
+.menu-buttom,
+.header.ant-layout-header 
+.menu-avartar{
+    padding: 0 10px;
+}
+
+.header.ant-layout-header 
+.menu-buttom{
+    float: left;
+}
+
+.header.ant-layout-header 
+.menu-avartar{
+    float: right;
+}
+
+.menu-buttom button,
+.menu-buttom .ant-badge,
+.menu-avartar button,
+.menu-avartar .ant-badge{
+    margin: 0 5px;
+}
+
+.menu-avartar
+.ant-badge .ant-avatar{
+    margin-top: -5px !important;
+    color: var(--color-dark-4);
+}
+.header.ant-layout-header 
+button.ant-btn-link.ant-btn-circle{
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    color: var(--color-white);
+    background-color: transparent;
+
+}
+
+.header.ant-layout-header 
+button.ant-btn-primary.ant-btn-circle{
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    color: var(--color-white);
+    border: 0px solid var(--color-white);
+    background-color: transparent;
+}
 
 .menu-buttom button:hover,
 .menu-avartar button:hover{
     background-color: var(--color-hoverBuTo) !important;
 }
+/* Dropdow header */
+.Dropdown-header{
+    top: 1px;
+    cursor: pointer;
+}
 
+.ant-dropdown .ant-dropdown-menu-item,
+.ant-dropdown .ant-dropdown-menu-item > a,
+.ant-dropdown .ant-dropdown-menu-submenu-title > a{
+    color: var(--color-white) !important;
+}
+
+.ant-dropdown,
+.ant-dropdown-menu{
+    background-color: var(--color-hoverBuTo) !important; 
+}
+
+.ant-dropdown .ant-dropdown-menu-item-active,
+.ant-dropdown .ant-dropdown-menu-item-active > a,
+.ant-dropdown .ant-dropdown-menu-submenu-title > a{
+    background-color: var(--color-hoverDropDpwnTo) !important; 
+}
+
+.ant-dropdown .ant-tooltip-arrow{
+    top: -12px;
+    left: 85%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.ant-dropdown .ant-tooltip-arrow::before{
+    background-color: var(--color-hoverBuTo) !important; 
+    -webkit-box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.07);
+    box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.07);
+    -webkit-transform: translateY(6.53553391px) rotate(45deg);
+    -ms-transform: translateY(6.53553391px) rotate(45deg);
+    transform: translateY(6.53553391px) rotate(45deg);
+    z-index: -999;
+}

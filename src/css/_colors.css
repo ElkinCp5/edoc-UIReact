@@ -1,5 +1,6 @@
 :root{
     --color-white: rgb(255, 255, 255);
+    --color-white-ahlpa: rgba(255, 255, 255, 0.2);
 
     --color-gray: rgb(230, 231, 232);
     --color-gray-1: rgb(204, 204, 204);
