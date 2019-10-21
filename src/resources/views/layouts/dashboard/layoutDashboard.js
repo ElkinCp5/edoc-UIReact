@@ -58,7 +58,7 @@ class dashboardLayout extends React.Component {
             <Content
               style={{
                 background: 'transparent',
-                minHeight: 280,
+                minHeight: "100vh",
               }}
             >
               {children}

@@ -1,0 +1,25 @@
+.card-login{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    display: grid !important;
+    margin: calc(50vh - 200px) auto;
+    background-color: var(--color-white);
+}
+
+.card-login .logo-login {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-login 
+.logo-login img{
+    width: 90px;
+    margin: 10px auto;
+}
+
+.card-login
+.footer-login{
+    border-top: 1px solid var(--color-gray)
+}

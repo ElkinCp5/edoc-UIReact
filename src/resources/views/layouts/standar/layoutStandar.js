@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 /* var global system */
 import { Helper } from '../../../../utils';
+import "./layoutStandar.css";
 
 /* Import Custom Components */
 
@@ -34,7 +35,7 @@ class standarLayout extends React.Component {
     let { className, location, routes, children } = this.props;
 
     return (
-    <Layout>
+    <Layout className={className}>
         <Content>
             {children}
         </Content>

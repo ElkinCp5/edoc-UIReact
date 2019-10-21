@@ -1,0 +1,6 @@
+.login-page.ant-layout{
+    background-color: transparent !important
+}
+.login-page .ant-layout-content{
+    height: 100vh;
+}

@@ -118,6 +118,7 @@
     color: var(--color-blue-4);
 }
 
+#root,
 .gradien-YFB{
     background: var(--color-yellow-1);
     background: -moz-linear-gradient(-45deg, var(--color-yellow-1) 0%, var(--color-fuschia-1) 43%, var(--color-blue-1) 100%);

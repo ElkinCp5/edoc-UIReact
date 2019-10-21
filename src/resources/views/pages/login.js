@@ -6,7 +6,8 @@ import { bindActionCreators } from "redux";
 
 /* Import Custom Components */
 import { layoutStandar as Standar } from "../layouts";
-
+import { Ecolor} from "../../images";
+import "./css/login.css"
 
 
 class Login extends Component {
@@ -14,7 +15,25 @@ class Login extends Component {
   render() {
     return (
       <Standar className="login-page">
-          <h1>Hola Soy el login</h1>
+          <div className="card-login">
+            <div className="logo-login">
+              <img src={Ecolor} />
+            </div>
+            <div className="tabs-login">
+              <ul>
+                <li>Inicio de sesion</li>
+                <li>Registrate</li>
+              </ul>
+            </div>
+            <div className="container-login">
+
+            </div>
+            <div className="footer-login">
+              <Button shape="circle" icon="google" />
+              <Button shape="circle" icon="windows" />
+              <Button shape="circle" icon="linkedin" />
+            </div>
+          </div>
       </Standar>
     );
   }
