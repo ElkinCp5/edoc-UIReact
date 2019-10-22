@@ -1,8 +1,9 @@
 :root{
-    --heightLogo: 130px;
+    --heightLogin:500px;
     --heightFooter:70px;
     --heightTabs:50px;
-    --heightConent:calc(100% - (var(--heightLogo) + var(--heightFooter) + var(--heightTabs)));
+    --heightLogo: (130px + var(--heightTabs));
+    --heightConent:calc(100% - (var(--heightLogo) + var(--heightFooter)));
     --colorTabs: var(--color-gray-3);
 }
 .card-login{
@@ -29,12 +30,15 @@
 /*style tabs*/
 .card-login
 .tabs-login{
+    width: 100%;
     height: var(--heightTabs);
     text-align: center;
 }
-.tabs-login ul{
+.tabs-login ul,
+.tabs-login ul li{
     margin: 0;
     padding: 0;
+    border-radius: 10px ;
 }
 
 .tabs-login ul li {
@@ -51,15 +55,14 @@
     color: var(--colorTabs) !important;
 }
 
-.tabs-login ul li:active,
+.tabs-login ul li.active,
 .tabs-login ul li:focus,
 .tabs-login ul li:hover,
-.tabs-login ul li a:active,
+.tabs-login ul li a.active,
 .tabs-login ul li a:focus,
 .tabs-login ul li a:hover,
 .tabs-login ul li a:focus{
     color: var(--color-fuschia) !important;
-    border-radius: 10px ;
 }
 
 /*style container*/

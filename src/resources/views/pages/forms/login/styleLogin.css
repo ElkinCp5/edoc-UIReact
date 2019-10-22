@@ -9,6 +9,7 @@
 #components-form-demo-normal-login .login-form-button {
     width: 100% !important;
     border: 0;
+    margin-top: 15px;
     border-radius: 50px;
     background-color: var(--color-fuschia-1);
 }

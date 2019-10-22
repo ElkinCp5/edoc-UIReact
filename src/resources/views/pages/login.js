@@ -19,20 +19,20 @@ class Login extends Component {
           <div className="card-login">
             <div className="logo-login">
               <img src={Ecolor} />
-            </div>
-            <div className="tabs-login">
-              <ul>
-                <li><Link to="">Inicio</Link></li>
-                <li><Link to="">Registrate</Link></li>
-              </ul>
+              <div className="tabs-login">
+                <ul>
+                  <li><Link to="" className="active">Inicio</Link></li>
+                  <li><Link to="">Registrate</Link></li>
+                </ul>
+              </div>
             </div>
             <div className="container-login">
               <FormLogin />
-            </div>
-            <div className="footer-login">
-              <Button shape="circle" icon="google" />
-              <Button shape="circle" icon="windows" />
-              <Button shape="circle" icon="linkedin" />
+              <div className="footer-login">
+                <Button shape="circle" icon="google" />
+                <Button shape="circle" icon="windows" />
+                <Button shape="circle" icon="linkedin" />
+              </div>
             </div>
           </div>
       </Standar>
