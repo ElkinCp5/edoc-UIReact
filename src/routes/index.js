@@ -16,9 +16,11 @@ function RouteLink() {
   return (
       <Router>
         <Switch>
-          {routes.map((route, index) => (
-            <RouteWithSubRoutes key={index} {...route} />
-          ))}
+          {
+            routes.map((route, index) => (
+              <RouteWithSubRoutes key={index} {...route} />
+            ))
+          }
         </Switch>
       </Router>
   );

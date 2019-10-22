@@ -29,6 +29,22 @@
 }
 
 /* Sider */
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-active{
+    background-color: var(--color-hoverBuTo) !important;
+    color: var(--color-blue) !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item a {
+    color: var(--color-gray-2) !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected a,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-active a{
+    color: var(--color-white) !important;
+}
+
 .dashboard .ant-layout-sider,
 .dashboard .ant-layout-sider.ant-layout-sider-collapsed{
     position: relative ;
@@ -54,3 +70,4 @@
     min-width: 87px !important;
     width: 87px !important;
 }
+

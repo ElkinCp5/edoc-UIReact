@@ -1,0 +1,43 @@
+#components-form-demo-normal-login .login-form {
+    max-width: 300px;
+}
+
+#components-form-demo-normal-login .login-form-forgot {
+    float: right;
+}
+
+#components-form-demo-normal-login .login-form-button {
+    width: 100% !important;
+    border: 0;
+    border-radius: 50px;
+    background-color: var(--color-fuschia-1);
+}
+
+#components-form-demo-normal-login .ant-form-explain{
+  color: var(--color-blue-2);
+}
+
+#components-form-demo-normal-login .login-form-forgot{
+  color: var(--color-blue-1);
+}
+
+#components-form-demo-normal-login .ant-checkbox-checked .ant-checkbox-inner{
+  background-color: var(--color-blue-1);
+  border-color: var(--color-blue-3);
+}
+
+#components-form-demo-normal-login .ant-checkbox-inner{
+  background-color: var(--color-gray);
+  border-color: var(--color-blue-3);
+}
+
+#components-form-demo-normal-login .ant-input:focus,
+#components-form-demo-normal-login .ant-input:hover{
+  border: 1px solid var(--color-blue) !important;
+  box-shadow: none !important;
+
+}
+
+#components-form-demo-normal-login .has-error .ant-input{
+  border: 1px solid var(--color-fuschia) !important;
+}

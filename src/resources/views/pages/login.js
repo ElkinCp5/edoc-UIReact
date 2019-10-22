@@ -1,17 +1,18 @@
 import React, { Component } from "react";
-import { Card, Row, Col, Icon, Tooltip, Button, Input, Checkbox } from "antd";
+import { Link } from "react-router-dom";
+import { Card, Row, Col, Icon, Tooltip, Form, Input, Button, Checkbox } from "antd";
 /* Redux Connect */
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
 /* Import Custom Components */
 import { layoutStandar as Standar } from "../layouts";
+import FormLogin from "./forms/login/structureLogin"
 import { Ecolor} from "../../images";
 import "./css/login.css"
 
 
 class Login extends Component {
-
   render() {
     return (
       <Standar className="login-page">
@@ -21,12 +22,12 @@ class Login extends Component {
             </div>
             <div className="tabs-login">
               <ul>
-                <li>Inicio de sesion</li>
-                <li>Registrate</li>
+                <li><Link to="">Inicio</Link></li>
+                <li><Link to="">Registrate</Link></li>
               </ul>
             </div>
             <div className="container-login">
-
+              <FormLogin />
             </div>
             <div className="footer-login">
               <Button shape="circle" icon="google" />

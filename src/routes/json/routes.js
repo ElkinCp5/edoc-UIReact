@@ -1,4 +1,4 @@
-import { login, dashboard, E404 } from "../../resources/views";
+import { login, start, dashboard, profile, format, E404 } from "../../resources/views";
   
 const routes = [
     {
@@ -8,7 +8,7 @@ const routes = [
     },
     {
         path: "/dashboard",
-        component: dashboard,
+        component: start,
         routes: [
             {
                 path: "/dashboard",
@@ -16,7 +16,17 @@ const routes = [
                 component: dashboard
             },
             {
-                path: "/cpanel/dashboard",
+                path: "/dashboard/format",
+                exact: true,
+                component: format
+            },
+            {
+                path: "/dashboard/profile",
+                exact: true,
+                component: profile
+            },
+            {
+                path: "/dashboard/user",
                 exact: true,
                 component: dashboard
             },

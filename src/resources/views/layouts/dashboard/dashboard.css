@@ -54,6 +54,7 @@
 .ant-menu-item.ant-menu-item-active{
     border: 0 !important;
     margin: 0 !important;
+    
 }
 
 .ant-menu-inline > .ant-menu-item,

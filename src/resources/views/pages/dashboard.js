@@ -74,9 +74,18 @@ let CardsDashboars =
 ];
 
 class DashboardPage extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      collapsed: false,
+    };
+  }
+
   render() {
+    let { routes } = this.props;
     return (
-      <Dashboard className="container">
+      <div>
         <Title toBack={false} title="Tablero" subTitle="Cuadrilla para diligenciar tu hoja de vida" />
         <div className="container-page">
           {
@@ -91,7 +100,7 @@ class DashboardPage extends Component {
             )
           }
         </div>
-      </Dashboard>
+      </div>
     );
   }
 }

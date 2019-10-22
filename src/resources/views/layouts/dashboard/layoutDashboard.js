@@ -1,7 +1,6 @@
-import React from "react";
+import React, {Component} from "react";
 import {
   BrowserRouter as Router,
-  Link,
   Switch,
   withRouter
 } from "react-router-dom";
@@ -20,7 +19,7 @@ let { Content} = Layout;
 
 
 
-class dashboardLayout extends React.Component {
+class dashboardLayout extends Component {
   state = {
     collapsed: false
   };
@@ -46,12 +45,12 @@ class dashboardLayout extends React.Component {
   }
 
   render() {
-    let { className, location, routes, children } = this.props;
-
+    let { className, location, routes } = this.props;
+    let { pathname } = location;
     return (
       <Router>
         <Layout className="dashboard">
-          <Sider logoName={EDcolor} logoE={ECcolor} onCollapsed={this.toggle} collapsed={this.state.collapsed}/>
+          <Sider pathname={pathname} logoName={EDcolor} logoE={ECcolor} onCollapsed={this.toggle} collapsed={this.state.collapsed}/>
           <Layout>
             <Header  collapsed={this.state.collapsed} onCollapsed={this.toggle} />
 
@@ -61,7 +60,13 @@ class dashboardLayout extends React.Component {
                 minHeight: "100vh",
               }}
             >
-              {children}
+              <Switch>
+                {
+                  routes.map((route, index) => (
+                    <RouteWithSubRoutes key={index} {...route} />
+                  ))
+                }
+              </Switch>
             </Content>
           </Layout>
         </Layout>

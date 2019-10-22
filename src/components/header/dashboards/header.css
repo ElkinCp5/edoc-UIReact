@@ -1,7 +1,6 @@
 :root{
     --color-hoverBuTo: var(--color-blue-2);
     --color-hoverDropDpwnTo: var(--color-blue-3);
-
 }
 .header.ant-layout-header{
     background-color: var(--color-blue-4);
@@ -16,14 +15,6 @@
     width: 10px !important;
 }
 
-.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
-.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-active {
-    background-color: var(--color-hoverBuTo) !important;
-    color: var(--color-blue) !important;
-}
-.ant-menu:not(.ant-menu-horizontal) .ant-menu-item {
-    color: var(--color-white) !important;
-}
 /* Button header menu*/
 .header.ant-layout-header 
 .menu-buttom,
