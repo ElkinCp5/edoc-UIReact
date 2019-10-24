@@ -40,6 +40,7 @@
         position: absolute !important;
         font-size: 24px;
         z-index: 900;
+        cursor: pointer !important;
     }
     .ant-layout-sider
     .close-sider i{

@@ -59,7 +59,12 @@
     max-width: 200px;
 }
 .ant-layout-sider .close-sider{
+    position: absolute !important;
+    cursor: pointer !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
     display: none;
+    z-index: 900;
 }
 .ant-layout-sider div{
     display: block ;
