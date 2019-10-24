@@ -25,7 +25,7 @@ class  Sdash extends Component {
                 <Button className="close-sider"
                     type="link" 
                     shape="circle" 
-                    icon={"close-circle"}
+                    icon={"null"}
                     onClick={onCollapsed}
                 />
                 <Menu  mode="inline" defaultSelectedKeys={[pathname]}>
