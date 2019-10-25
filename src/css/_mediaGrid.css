@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1189px) {
+    .card-dash-button.grid-card-dash{
+        width: calc(25% - 10px);
+    }
+}
+
+
+@media only screen and (max-width: 906px) {
+    .card-dash-button.grid-card-dash{
+        width: calc(33.333% - 10px);
+    }
+}
+
+@media only screen and (max-width: 629px) {
+    .card-dash-button.grid-card-dash{
+        width: calc(50% - 10px);
+    }
+}
+
+@media only screen and (max-width: 439px) {
+    .card-dash-button.grid-card-dash{
+        width: calc(100% - 10px);
+    }
+}

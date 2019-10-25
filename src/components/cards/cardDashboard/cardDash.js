@@ -13,7 +13,7 @@ let Card = (props) => {
     icon        = (icon && icon !== '') ? icon : "close-circle";
 
     return (
-        <div className="card-dash-button">
+        <div className="card-dash-button grid-card-dash">
             <Link to={url} name={title}>
             <div className="card-icon">
                 <div className="circle">

@@ -14,8 +14,7 @@
 .card-dash-button {
     width: var(--CardCube);
     height: var(--CardCube);
-    display: grid !important;
-    float: left;
+    display: inline-block !important;
     margin: 5px !important;
     padding: 5px;
     

@@ -2,6 +2,7 @@
 :root{
     --sizeLogo:250px;
 }
+
 @media only screen and (max-width: 576px) {
     .hidden-xs{
         display: none !important;
