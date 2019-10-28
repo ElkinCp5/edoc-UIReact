@@ -1,9 +1,9 @@
+/*Media Grid dashboar*/
 @media only screen and (max-width: 1189px) {
     .card-dash-button.grid-card-dash{
         width: calc(25% - 10px);
     }
 }
-
 
 @media only screen and (max-width: 906px) {
     .card-dash-button.grid-card-dash{
